@@ -7,10 +7,17 @@
 </ion-header>
 
 <ion-content padding>
-  <label>Enter value:</label>
-  <ion-input type="text" [(ngModel)]="name"></ion-input>
-  <label> Enter the new value:</label>
-  <ion-input type="text" [(ngModel)]="Updatedname"></ion-input>
+  <ion-item>
+    <ion-label>Enter value:</ion-label>
+    <ion-input type="text" [(ngModel)]="name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label> Enter the new value:</ion-label>
+    <ion-input type="text" [(ngModel)]="Updatedname"></ion-input>
+  </ion-item>
+
+  <br>
+
   <button ion-button (click) = "addData(name)"> Add </button>
   <button ion-button (click)= "updateData(name, Updatedname)"> Update </button>
   <button ion-button (click)="deleteData(name)">Delete</button>
