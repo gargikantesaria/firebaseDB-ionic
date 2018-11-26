@@ -9,11 +9,11 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyC5Y8jtHsEluTXUUwt-M-sPN7gEWH-j0iY",
-  authDomain: "usedb-cbfc7.firebaseapp.com",
-  databaseURL: "https://usedb-cbfc7.firebaseio.com",
-  projectId: 'usedb-cbfc7',
-  messagingSenderId: '180101044536'
+  apiKey: "Your_api_key",
+  authDomain: "Your_auth_domain",
+  databaseURL: "Your_database_url",
+  projectId: "Your_projectId",
+  messagingSenderId: 'Your_messanger_id'
 };
 
 @NgModule({

@@ -20,7 +20,6 @@ export class HomePage {
     this.ref.on('child_changed', (res) => { console.log("child changed", res) });
     this.ref.on('child_moved', (res) => console.log("child_moved",res));
     this.ref.on('child_removed', (res) => { console.log("Child_removed", res)});
-    // this.item = this.itemRef.valueChanges();
     this.getDetails();  
   }
 
