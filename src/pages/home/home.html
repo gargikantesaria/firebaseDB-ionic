@@ -7,8 +7,17 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <label>Enter value:</label>
+  <ion-input type="text" [(ngModel)]="name"></ion-input>
+  <label> Enter the new value:</label>
+  <ion-input type="text" [(ngModel)]="Updatedname"></ion-input>
+  <button ion-button (click) = "addData(name)"> Add </button>
+  <button ion-button (click)= "updateData(name, Updatedname)"> Update </button>
+  <button ion-button (click)="deleteData(name)">Delete</button>
+
+  <div *ngIf="displayDetail?.length > 0">
+    <div *ngFor="let data of displayDetail">
+        <h5>{{ data.name }}</h5>
+    </div>
+  </div>
 </ion-content>
