@@ -60,11 +60,11 @@ export class HomePage {
 
   getDetails(){
     this.afDB.list('/item').snapshotChanges().subscribe((res) => {
-      let a:any = [];
+      let tempArray:any = [];
       res.forEach((ele) => {
-        a.push(ele.payload.val())
+        tempArray.push(ele.payload.val())
       });
-      this.displayDetail = a;
+      this.displayDetail = tempArray;
     })
   }
  
